@@ -8,8 +8,7 @@ message: >-
 type: software
 authors:
   - given-names: Douglas
-    name-particle: S.
-    family-names: Rodrigues
+    family-names: De Souza Rodrigues
     email: rodriguesdouglas@id.uff.br
     affiliation: >-
       Production Engineering Department, Fluminense Federal
