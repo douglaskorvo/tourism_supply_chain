@@ -50,5 +50,5 @@ The corpus was collected with the Places API (Legacy) endpoints. Google froze th
 
 ## Contact
 
-Douglas S. Rodrigues — Production Engineering Department, Fluminense Federal University
+Douglas De Souza Rodrigues — Production Engineering Department, Fluminense Federal University
 [rodriguesdouglas@id.uff.br](mailto:rodriguesdouglas@id.uff.br) · [ORCID 0000-0001-7473-7425](https://orcid.org/0000-0001-7473-7425)
