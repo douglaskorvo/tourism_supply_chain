@@ -1,0 +1,5 @@
+step,records
+0. Raw export,54687
+1. After removing records without text,51127
+2. After removing exact duplicates (-45),51082
+3. After excluding 9 ambiguous-configuration providers,51037

@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 title: >-
   Tourism service supply chains in ten emerging economies:
-  data collection and analysis notebooks
+  data collection and audited analysis notebooks
 message: >-
   If you use this software or the accompanying materials, please
   cite both the archived release and the associated article.
@@ -16,18 +16,22 @@ authors:
     orcid: 'https://orcid.org/0000-0001-7473-7425'
 repository-code: 'https://github.com/douglaskorvo/tourism_supply_chain'
 abstract: >-
-  Notebooks documenting the retrieval of a corpus of user-generated
-  tourism reviews from the Google Places API and its analysis, for a
-  study of tourism service supply chains in ten emerging economies.
-  The raw corpus is not redistributed because platform terms of
-  service restrict redistribution of Places content.
+  Versioned notebooks and aggregate reference outputs documenting the
+  retrieval and audited analysis of a tourism-review corpus for a study
+  of reported disruption exposure and customer impact in tourism service
+  supply chains across ten emerging economies. No review-level platform
+  content is redistributed.
 keywords:
   - tourism service supply chain
-  - service disruption
+  - reported disruption
+  - customer impact
   - user-generated content
   - dictionary-based content analysis
+  - rare-events logistic regression
+  - equivalence testing
   - reproducibility
   - emerging economies
 license: MIT
-version: 1.0.1
-date-released: '2026-08-16'
+version: 1.1.0
+date-released: '2026-08-27'
+

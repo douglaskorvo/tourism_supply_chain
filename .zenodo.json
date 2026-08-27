@@ -1,10 +1,10 @@
 {
-  "title": "Tourism service supply chains in ten emerging economies: data collection and analysis notebooks",
-  "description": "<p>Notebooks documenting how a corpus of user-generated tourism reviews was retrieved from the Google Places API and how it was analysed, for a study of tourism service supply chains in ten emerging economies (51,037 reviews, 11,500 providers, 29 cities).</p><p><strong>Contents.</strong> A collection notebook documenting the retrieval protocol, which runs in a dry-run mode issuing no API calls; and an analysis notebook implementing text normalisation, dictionary-based construct coding with negation handling, and logistic regressions with city fixed effects and supplier-clustered standard errors, together with the frozen coding dictionaries.</p><p><strong>Data availability.</strong> No review data is distributed. Google Maps Platform policies permit indefinite storage of place identifiers only; review text, author names, ratings and related Places content may not be pre-fetched, cached or retained outside the permitted exceptions. The raw corpus is therefore neither redistributed nor available on request, and reviewer display names, which were processed only for deduplication, appear in no released file. What is deposited is the method: an independent researcher with their own API credentials can reconstruct an equivalent corpus from the documented protocol and re-run the analysis end to end. Re-execution does not reproduce the same corpus, since the platform returns a relevance-ranked subset that changes continuously.</p><p><strong>Measurement status.</strong> The coding dictionaries have not been validated against independent human coding. A held-out double-coded validation protocol was prepared but had not been executed at this version. No precision, sensitivity or inter-coder agreement statistics are reported.</p>",
+  "title": "Tourism service supply chains in ten emerging economies: data collection and audited analysis notebooks",
+  "description": "<p>Versioned computational materials for a study of reported disruption exposure and customer impact in tourism service supply chains across ten emerging economies. The frozen analytical run contains 51,037 reviews from 11,500 providers in 29 cities.</p><p><strong>Contents.</strong> The deposit includes a dry-run collection notebook documenting the Google Places retrieval protocol; an audited analysis notebook implementing exclusions, frozen dictionary coding, supplier-clustered logistic models, Firth rare-events checks, Benjamini–Hochberg FDR correction, TOST equivalence tests, restricted-sample robustness, leave-one-out same-source assessment, country heterogeneity and publication figures; and aggregate reference tables T0–T12 with a reproducibility manifest.</p><p><strong>Data availability.</strong> No review-level platform content is distributed. Review text, reviewer display names, ratings and related Places content are excluded from the deposit. The public materials comprise the computational method and aggregate non-identifying reference outputs. Re-execution on a newly retrieved relevance-ranked platform sample is not expected to reproduce the frozen corpus exactly.</p><p><strong>Measurement scope.</strong> The public version documents dictionary diagnostics and rule-based text indicators. Individual human-coding records, supplier-audit records and their validation metrics are outside the scope of this public release; the deposited code neither recalculates nor infers them.</p>",
   "upload_type": "software",
   "access_right": "open",
   "license": "MIT",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "language": "eng",
   "creators": [
     {
@@ -15,12 +15,14 @@
   ],
   "keywords": [
     "tourism service supply chain",
-    "service disruption",
+    "reported disruption",
+    "customer impact",
     "user-generated content",
     "dictionary-based content analysis",
+    "rare-events logistic regression",
+    "equivalence testing",
     "reproducibility",
     "emerging economies",
-    "logistic regression",
     "Google Places API"
   ],
   "related_identifiers": [
@@ -30,5 +32,6 @@
       "scheme": "url"
     }
   ],
-  "notes": "Version 1.0.1 removes journal-specific references and harmonises the data availability statement with Google Maps Platform policies. Add the article DOI as a related identifier with relation 'isSupplementTo' once the article is published."
+  "notes": "Version 1.1.0 adds the audited T0–T12 computational pipeline, complete non-fixed-effect model exports, aggregate reference outputs and automatic reference checks. The Colab link and public-release measurement wording were also corrected. Add the article DOI as a related identifier once the article is published."
 }
+

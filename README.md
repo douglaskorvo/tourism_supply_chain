@@ -1,54 +1,85 @@
-# Tourism service supply chains — data collection and analysis
+# Tourism service supply chains — data collection and audited analysis
 
-Notebooks documenting how the review corpus was retrieved and analysed for a study of tourism service supply chains in ten emerging economies (BRICS+).
+Notebooks and aggregate reference outputs documenting how a tourism-review corpus was retrieved and analysed for a study of reported disruption exposure and customer impact in tourism service supply chains across ten emerging economies.
 
-Analytical base: **51,037 reviews · 11,500 providers · 29 cities · 10 countries**.
+Reference analytical base: **51,037 reviews · 11,500 providers · 29 cities · 10 countries**.
 
 ## Contents
 
-| File | What it does |
+| File | Purpose |
 |---|---|
-| `data_collection.ipynb` | Retrieval protocol for the Google Places review corpus that produced `reviews_raw.csv`. Runs in `DRY_RUN` mode by default: prints the exact API requests without contacting Google and without incurring cost |
-| `tssc_analysis.ipynb` | Cleaning, dictionary-based construct coding with negation handling, logistic models with city fixed effects and supplier-clustered standard errors, robustness checks and figures |
-| `requirements.txt` | Package versions of the recorded run |
+| `data_collection.ipynb` | Documents the Google Places retrieval protocol. It runs in `DRY_RUN` mode by default, so it prints the requests without contacting Google or incurring API costs |
+| `tssc_analysis.ipynb` | Complete audited pipeline: exclusions, frozen dictionaries, descriptive tables, clustered logistic models, Firth checks, FDR, TOST equivalence, robustness, leave-one-out analysis, country heterogeneity and figures |
+| `reference_outputs/` | Aggregate reference tables `T0–T12` and the manifest of the frozen analytical run; no review text or reviewer identity is included |
+| `requirements.txt` | Package versions recorded for the reference environment |
+| `.zenodo.json` and `CITATION.cff` | Deposit and citation metadata |
 
 ## Running the analysis
 
-```
+Use Python 3.10 and install the recorded dependencies:
+
+```bash
 pip install -r requirements.txt
 ```
 
-Open `tssc_analysis.ipynb`, point the configuration cell at your own raw export and run all cells. Runtime is under a minute.
+Place a lawfully obtained raw export in the working directory as `reviews_raw.csv`, or set the environment variable `TSSC_RAW_CSV`:
 
-## Data availability
+```bash
+export TSSC_RAW_CSV=/path/to/reviews_raw.csv
+jupyter notebook tssc_analysis.ipynb
+```
 
-**No review data is distributed in this repository.** Google Maps Platform policies permit indefinite storage of place identifiers only; review text, author names, ratings and related Places content may not be pre-fetched, cached or retained outside the permitted exceptions, and may not be exported for use outside the Services. The raw corpus is therefore neither redistributed nor available on request. Reviewer display names were retrieved by the platform and processed **only** for deduplication, and appear in no file released here.
+Run all notebook cells. By default, outputs are written to `output/`. The input schema is:
 
-What this repository provides is the method. `data_collection.ipynb` documents the retrieval protocol in full and `tssc_analysis.ipynb` contains the complete cleaning, coding and estimation code together with the frozen dictionaries, so an independent researcher with their own API credentials can reconstruct an equivalent corpus and re-run the analysis end to end.
+```text
+place_id, country, city, segment, author_name, rating, text, time_desc, lang
+```
 
-Re-execution will **not** reproduce the same corpus, and the reported estimates are therefore not expected to replicate exactly: the platform returns a relevance-ranked subset that changes continuously as users post, edit and delete content.
+The frozen reference corpus has SHA-256:
 
-## Specification
+```text
+a4d34c3b3f89be548c6345f1a68370674441c7110431498996f1845714746fa0
+```
 
-Logistic regression on a binary dissatisfaction outcome (1–2 stars), with city fixed effects and standard errors clustered by provider. The principal exposure is the collection stratum under which each provider was retrieved. That variable is exogenous to the review text, which removes circularity in measurement, but it is **not** exogenous to the outcome: providers select into business models and customers self-select into them.
+When that input is used, the notebook compares the newly generated tables with `reference_outputs/` and reports whether `T0–T12` pass the numerical and structural checks. A newly retrieved platform corpus is expected to differ and therefore skips the frozen-reference comparison.
 
-Constructs are dictionary-based over the Portuguese-language text. `stage_breadth` counts how many chain stages a review mentions; it correlates with review length at *r* = 0.50 and is interpretable only under length adjustment.
+## Statistical specification
 
-## Measurement status
+The primary models are logistic regressions with city fixed effects and supplier-clustered standard errors. Controls comprise log review length, approximate review age and machine-translation status.
 
-**The coding dictionaries have not been validated against independent human coding.** A held-out, double-coded validation protocol and blinded instruments were prepared, and the records inspected during dictionary development were recorded so that they could be excluded from the held-out pool. That validation had **not been executed** at the time of this release. No precision, sensitivity, specificity, F1 or inter-coder agreement statistics exist.
+The notebook additionally implements:
 
-Construct prevalence is dictionary prevalence, not validated prevalence of the phenomenon.
+- BFGS estimation with recorded convergence status;
+- Firth logistic regression for the rare exposure outcome and the interaction estimate;
+- Benjamini–Hochberg false-discovery-rate correction;
+- average marginal effects and two one-sided equivalence tests at ±0.5, ±1 and ±2 percentage points;
+- six restricted-sample checks;
+- leave-one-out supplier indicators to reduce focal-review same-source overlap;
+- country-specific estimates and joint conventional and supplier-clustered tests;
+- complete non-fixed-effect coefficient tables for Equations 1–3.
 
-The collection-stratum labels have likewise not been audited at provider level. They denote the query list that retrieved each provider: exogenous to the review text, which removes circularity in measurement, but **not** exogenous to the outcome.
+The collection stratum is assigned by the retrieval protocol and is independent of the focal review text. It is not a randomized treatment: providers and customers may select into tourism configurations. Results are therefore associational.
 
-Two constructs are reported as descriptive null findings rather than measures: service recovery, which co-occurs with a reported disruption in only 44 records, and environmental reference, which appears in 0.47% of reviews with no difference between strata.
+## Data availability and platform constraints
+
+**No review-level data are distributed in this repository.** Google Maps Platform policies restrict redistribution and retention of Places content. Review text, reviewer display names, ratings and related platform content are therefore not deposited or available from this repository.
+
+Reviewer display names were processed only for exact deduplication and appear in no released output. The repository deposits the computational method and aggregate, non-identifying reference results. An independent researcher with appropriate API credentials can reconstruct an equivalent corpus from the documented protocol, but the platform's relevance-ranked subset changes over time, so a new retrieval is not expected to reproduce the frozen corpus exactly.
+
+## Measurement evidence and public-release scope
+
+The dictionaries are frozen in the notebook, with documented corrections for Portuguese lexical polysemy, negation and non-disruptive uses of cancellation vocabulary. Their outputs quantify rule-based mentions in the retrieved review text, not objective incident incidence, contractual governance, observed recovery capacity or environmental performance.
+
+Individual human-coding records, supplier-audit records and their validation metrics do not form part of this public release. Consequently, this repository neither recalculates nor infers those metrics. This statement defines the scope of the public deposit and does not characterize the status of any separately documented validation activity.
+
+Service-recovery and environmental-language indicators are retained as descriptive boundary findings because recovery language co-occurs with only 44 reported disruptions and environmental language occurs in 0.47% of the reference corpus.
 
 ## Legacy API notice
 
-The corpus was collected with the Places API (Legacy) endpoints. Google froze that API in March 2025: it still operates for Cloud projects that already had it enabled, but it cannot be enabled in new Cloud projects. Anyone replicating the protocol from scratch needs Places API (New), whose request and response schemas differ.
+The corpus was collected with Places API (Legacy) endpoints. Google froze the legacy service for new Cloud projects in March 2025. New replications may require Places API (New), whose request and response schemas differ; `data_collection.ipynb` preserves the historical protocol and runs without issuing requests unless explicitly configured.
 
 ## Contact
 
-Douglas De Souza Rodrigues — Production Engineering Department, Fluminense Federal University
+Douglas De Souza Rodrigues — Production Engineering Department, Fluminense Federal University  
 [rodriguesdouglas@id.uff.br](mailto:rodriguesdouglas@id.uff.br) · [ORCID 0000-0001-7473-7425](https://orcid.org/0000-0001-7473-7425)
+

@@ -1,0 +1,54 @@
+{
+  "generated_utc": "2026-08-17T13:41:44.791256+00:00",
+  "duration_seconds": 56,
+  "seed": 20260817,
+  "environment": {
+    "python": "3.10.12",
+    "pandas": "2.3.3",
+    "numpy": "2.2.6",
+    "statsmodels": "0.14.6",
+    "scipy": "1.15.3",
+    "matplotlib": "3.10.9"
+  },
+  "specification": {
+    "controls": "log_words + review_age + translated",
+    "fixed_effects_main": "C(city)",
+    "fixed_effects_sensitivity": "C(country)",
+    "optimizer": "bfgs",
+    "cluster": "place_id",
+    "min_events_country": 15
+  },
+  "analytical_base": {
+    "reviews": 51037,
+    "providers": 11500,
+    "cities": 29,
+    "countries": 10,
+    "disruptions": 486
+  },
+  "inputs": {
+    "reviews_raw.csv": "a4d34c3b3f89be548c6345f1a68370674441c7110431498996f1845714746fa0"
+  },
+  "outputs": {
+    "T0_exclusion_log.csv": "114fde5639bba87ab56ab79d1ee5c0f65c46999a8b846c92e9589fff2b7fe10b",
+    "T10_robustness.csv": "9d5869e5d4eba9abbdbfb48fdb9461ea81f3d4234352d80534a777541d40ce79",
+    "T11_leave_one_out.csv": "9f85633fe7b0d665599c09c578d76f471e2267936212147e621067afa0240095",
+    "T12_stage_breadth.csv": "5a85767f9c9f6fba475b7579471a7e122d4f0e586d3c0a0528a9f84752846324",
+    "T1_sample_composition.csv": "9ddcac6d717865a4a1132b2e9625d603f8b5ff1d183ab9489b832b3410c5efba",
+    "T2_construct_prevalence.csv": "c4a8ffc9c44035160c1b259a86fbc2c504be9f5b23b0333268c9595c42460921",
+    "T3_decomposition.csv": "d1eac09c4f49224d7bbc2f0524fba4e058f6d026d05ff28df9e17bf66bf156f0",
+    "T4_models.csv": "5753e69dff2bf1ae0b040589a7fd613ec26f8ef0e98e1a5eee325ea3bff97b6b",
+    "T5_firth.csv": "09a16cc4df5581aab802eee0c6fad81f2831c2737b9f805380d004b737fd4fbd",
+    "T6_fdr_constructs.csv": "ecd92f3a37946b5a8b20ea8700b63a3ebee2538f639a3f1aa04ec803a06a47e5",
+    "T7_countries.csv": "deb29fb7060036b2a15328ef8878d3440f3c23b26e0c48ce8b2d5abfeeb0f38b",
+    "T8_joint_heterogeneity.csv": "582255f7250fe7816cec886a75e27035222ce018c96f988ede4b2a84ba15f749",
+    "T9_equivalence_tost.csv": "db094d60a0a7d13c11efa3cfbf39a65483f16a64470a55f96d88c009c4438506",
+    "fig1_prevalence_by_stratum.png": "9fc07987bd83f3e9af6e989fd32bd752ed3ed88351439de1bc6b7d7fb6fb572b",
+    "fig2_correlates_forest.png": "0a98e4846234d7ebc9cdc916aeb4c52c13f13d3bfc6010dbd7d3c9320dd0378c",
+    "fig3_decomposition.png": "a11c6b6bddf6589f96a237093a4ee498434b08155fa9c1ec3b5a29aaebb38c8f",
+    "fig4_interaction.png": "61e8e9bc8f8bf6d2601517f6918abb152d3bb70f9976a05b68e8e495e404ffea",
+    "fig5_country_exploratory.png": "489d9346ab980a86161e2d33669a66ecca9d75ac56960c8c3cd438da762ae63e",
+    "fig6_measurement_opportunity.png": "21ab7220b400d7ce9c3d1c372d294b165c1e1b6a710026a938668b46eda4cefb",
+    "provider_level_deidentified.csv": "50c346f2ce2799c84d5342c4b5833a63953a9915828652b47a939f591076cab6",
+    "reviews_analytical_deidentified.csv": "cef3cd02ed7ef07d680cc54fd61ad7c1ae85a8a97c24d55c6f9b55f664a09023"
+  }
+}

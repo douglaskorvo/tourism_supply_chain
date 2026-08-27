@@ -1,0 +1,4 @@
+test,statistic,df,p
+likelihood ratio,14.959968,7,0.036516
+"Wald, conventional VCE",2.022933,7,0.048421
+"Wald, supplier-clustered VCE",1.789458,7,0.08465

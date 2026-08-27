@@ -1,0 +1,8 @@
+subset,n,eq1_OR,eq1_p,eq2_interaction_OR,eq2_interaction_p,eq1_converged,eq2_converged
+complete,51037,2.219389,0.0,0.539092,0.017591,True,True
+text_ge_50,20846,2.178717,0.0,0.635772,0.134359,True,True
+exclude_brazil,38998,2.083127,0.0,0.419895,0.002732,True,True
+translated_only,38275,2.146773,0.0,0.364592,0.000805,True,True
+exclude_repeated_text,50902,2.220368,0.0,0.540879,0.018087,True,True
+reviews_le_2y,39804,2.108709,0.0,0.538672,0.035733,True,True
+providers_gt_1_review,50178,2.202471,0.0,0.537972,0.01759,True,True

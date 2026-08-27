@@ -1,0 +1,4 @@
+model,term,OR,CI_low,CI_high,p,n,converged,OR_per_10pp
+leave-one-out,coord_loo,0.068965,0.046063,0.103254,0.0,50178,True,0.765355
+leave-one-out,disr_loo,102.265474,56.226256,186.002551,0.0,50178,True,1.588448
+leave-one-out,mass_market,1.053134,0.951566,1.165544,0.317067,50178,True,1.053134

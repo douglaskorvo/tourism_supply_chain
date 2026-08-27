@@ -1,0 +1,11 @@
+country,events,omitted,OR,CI_low,CI_high,p_raw,q_fdr_bh,survives
+South Africa,39,False,5.742993,2.129875,15.485404,0.000553,0.001915,True
+Russia,53,False,3.633275,1.72046,7.672765,0.000718,0.001915,True
+Brazil,92,False,2.816351,1.757239,4.513807,1.7e-05,0.000135,True
+Saudi Arabia,40,False,2.695948,1.254511,5.793601,0.011057,0.022031,True
+United Arab Emirates,47,False,2.144133,1.168631,3.933923,0.01377,0.022031,True
+Iran,34,False,2.091917,0.729162,6.001565,0.169884,0.194154,False
+India,108,False,1.405131,0.90769,2.175185,0.127119,0.169493,False
+Egypt,55,False,1.182337,0.612708,2.281547,0.617503,0.617503,False
+China,4,True,,,,,,
+Ethiopia,14,True,,,,,,

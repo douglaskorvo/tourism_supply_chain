@@ -1,0 +1,8 @@
+model,term,OR,CI_low,CI_high,p,n,converged
+Eq1 exposure (city FE),mass_market,2.219389,1.774308,2.776118,0.0,51037,True
+Eq1 exposure (country FE),mass_market,2.172427,1.739213,2.713549,0.0,51037,True
+Eq2 (city FE),mass_market,0.878904,0.796198,0.970201,0.010469,51037,True
+Eq2 (city FE),disruption,30.284869,19.410027,47.252552,0.0,51037,True
+Eq2 (city FE),mass_market:disruption,0.539092,0.323695,0.897823,0.017591,51037,True
+Stage breadth -> disruption,stage_breadth,1.138114,1.038185,1.247662,0.005795,51037,True
+Stage breadth -> negative,stage_breadth,0.799838,0.757753,0.844261,0.0,51037,True

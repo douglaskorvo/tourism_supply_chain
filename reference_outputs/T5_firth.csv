@@ -1,0 +1,3 @@
+model,term,OR_ml,p_ml,OR_firth,p_firth,logOR_shift_pct
+Eq1 exposure,mass_market,2.219389,0.0,2.213927,0.0,0.309083
+Eq2 interaction,mass_market:disruption,0.539092,0.017591,0.546386,0.012837,2.174917
