@@ -1,5 +1,7 @@
 # Tourism service supply chains — data collection and audited analysis
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22003596.svg)](https://doi.org/10.5281/zenodo.22003596)
+
 Notebooks and aggregate reference outputs documenting how a tourism-review corpus was retrieved and analysed for a study of reported disruption exposure and customer impact in tourism service supply chains across ten emerging economies.
 
 Reference analytical base: **51,037 reviews · 11,500 providers · 29 cities · 10 countries**.
@@ -13,6 +15,14 @@ Reference analytical base: **51,037 reviews · 11,500 providers · 29 cities · 
 | `reference_outputs/` | Aggregate reference tables `T0–T12` and the manifest of the frozen analytical run; no review text or reviewer identity is included |
 | `requirements.txt` | Package versions recorded for the reference environment |
 | `.zenodo.json` and `CITATION.cff` | Deposit and citation metadata |
+
+## Citation
+
+For an analysis tied to the archived materials reported here, cite the exact version:
+
+> De Souza Rodrigues, D. (2026). *Tourism service supply chains in ten emerging economies: data collection and audited analysis notebooks* (Version 1.1.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.22132887
+
+The version-specific DOI is [`10.5281/zenodo.22132887`](https://doi.org/10.5281/zenodo.22132887). The concept DOI [`10.5281/zenodo.22003596`](https://doi.org/10.5281/zenodo.22003596) represents all releases and resolves to the latest version.
 
 ## Running the analysis
 
@@ -82,4 +92,3 @@ The corpus was collected with Places API (Legacy) endpoints. Google froze the le
 
 Douglas De Souza Rodrigues — Production Engineering Department, Fluminense Federal University  
 [rodriguesdouglas@id.uff.br](mailto:rodriguesdouglas@id.uff.br) · [ORCID 0000-0001-7473-7425](https://orcid.org/0000-0001-7473-7425)
-
