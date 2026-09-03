@@ -20,9 +20,9 @@ Reference analytical base: **51,037 reviews · 11,500 providers · 29 cities · 
 
 For an analysis tied to the archived materials reported here, cite the exact version:
 
-> De Souza Rodrigues, D. (2026). *Tourism service supply chains in ten emerging economies: data collection and audited analysis notebooks* (Version 1.1.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.22132887
+> De Souza Rodrigues, D. (2026). *Tourism service supply chains in ten emerging economies: data collection and audited analysis notebooks* (Version 1.1.1) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.22286681
 
-The version-specific DOI is [`10.5281/zenodo.22132887`](https://doi.org/10.5281/zenodo.22132887). The concept DOI [`10.5281/zenodo.22003596`](https://doi.org/10.5281/zenodo.22003596) represents all releases and resolves to the latest version.
+The version-specific DOI is [`10.5281/zenodo.22286681`](https://doi.org/10.5281/zenodo.22286681). The concept DOI [`10.5281/zenodo.22003596`](https://doi.org/10.5281/zenodo.22003596) represents all releases and resolves to the latest version.
 
 ## Running the analysis
 
