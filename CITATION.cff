@@ -15,7 +15,7 @@ authors:
       University, Petropolis, RJ, Brazil
     orcid: 'https://orcid.org/0000-0001-7473-7425'
 repository-code: 'https://github.com/douglaskorvo/tourism_supply_chain'
-doi: 10.5281/zenodo.22132887
+doi: 10.5281/zenodo.22286681
 abstract: >-
   Versioned notebooks and aggregate reference outputs documenting the
   retrieval and audited analysis of a tourism-review corpus for a study
@@ -33,5 +33,5 @@ keywords:
   - reproducibility
   - emerging economies
 license: MIT
-version: 1.1.0
-date-released: '2026-08-27'
+version: 1.1.1
+date-released: '2026-09-03'
