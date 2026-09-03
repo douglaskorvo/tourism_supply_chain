@@ -25,30 +25,97 @@
     "countries": 10,
     "disruptions": 486
   },
+  "note": "Hashes below are retained for provenance verification even where the underlying file is not publicly deposited. Only the T0-T12 reference tables in reference_outputs/ are distributed with this release; the raw input, figures and de-identified datasets are not part of the public ZIP.",
   "inputs": {
-    "reviews_raw.csv": "a4d34c3b3f89be548c6345f1a68370674441c7110431498996f1845714746fa0"
+    "reviews_raw.csv": {
+      "sha256": "a4d34c3b3f89be548c6345f1a68370674441c7110431498996f1845714746fa0",
+      "public_availability": "not publicly deposited — raw review corpus is not redistributed per Google Maps Platform policies"
+    }
   },
   "outputs": {
-    "T0_exclusion_log.csv": "114fde5639bba87ab56ab79d1ee5c0f65c46999a8b846c92e9589fff2b7fe10b",
-    "T10_robustness.csv": "9d5869e5d4eba9abbdbfb48fdb9461ea81f3d4234352d80534a777541d40ce79",
-    "T11_leave_one_out.csv": "9f85633fe7b0d665599c09c578d76f471e2267936212147e621067afa0240095",
-    "T12_stage_breadth.csv": "5a85767f9c9f6fba475b7579471a7e122d4f0e586d3c0a0528a9f84752846324",
-    "T1_sample_composition.csv": "9ddcac6d717865a4a1132b2e9625d603f8b5ff1d183ab9489b832b3410c5efba",
-    "T2_construct_prevalence.csv": "c4a8ffc9c44035160c1b259a86fbc2c504be9f5b23b0333268c9595c42460921",
-    "T3_decomposition.csv": "d1eac09c4f49224d7bbc2f0524fba4e058f6d026d05ff28df9e17bf66bf156f0",
-    "T4_models.csv": "5753e69dff2bf1ae0b040589a7fd613ec26f8ef0e98e1a5eee325ea3bff97b6b",
-    "T5_firth.csv": "09a16cc4df5581aab802eee0c6fad81f2831c2737b9f805380d004b737fd4fbd",
-    "T6_fdr_constructs.csv": "ecd92f3a37946b5a8b20ea8700b63a3ebee2538f639a3f1aa04ec803a06a47e5",
-    "T7_countries.csv": "deb29fb7060036b2a15328ef8878d3440f3c23b26e0c48ce8b2d5abfeeb0f38b",
-    "T8_joint_heterogeneity.csv": "582255f7250fe7816cec886a75e27035222ce018c96f988ede4b2a84ba15f749",
-    "T9_equivalence_tost.csv": "db094d60a0a7d13c11efa3cfbf39a65483f16a64470a55f96d88c009c4438506",
-    "fig1_prevalence_by_stratum.png": "9fc07987bd83f3e9af6e989fd32bd752ed3ed88351439de1bc6b7d7fb6fb572b",
-    "fig2_correlates_forest.png": "0a98e4846234d7ebc9cdc916aeb4c52c13f13d3bfc6010dbd7d3c9320dd0378c",
-    "fig3_decomposition.png": "a11c6b6bddf6589f96a237093a4ee498434b08155fa9c1ec3b5a29aaebb38c8f",
-    "fig4_interaction.png": "61e8e9bc8f8bf6d2601517f6918abb152d3bb70f9976a05b68e8e495e404ffea",
-    "fig5_country_exploratory.png": "489d9346ab980a86161e2d33669a66ecca9d75ac56960c8c3cd438da762ae63e",
-    "fig6_measurement_opportunity.png": "21ab7220b400d7ce9c3d1c372d294b165c1e1b6a710026a938668b46eda4cefb",
-    "provider_level_deidentified.csv": "50c346f2ce2799c84d5342c4b5833a63953a9915828652b47a939f591076cab6",
-    "reviews_analytical_deidentified.csv": "cef3cd02ed7ef07d680cc54fd61ad7c1ae85a8a97c24d55c6f9b55f664a09023"
+    "T0_exclusion_log.csv": {
+      "sha256": "114fde5639bba87ab56ab79d1ee5c0f65c46999a8b846c92e9589fff2b7fe10b",
+      "public_availability": "deposited (reference_outputs/)"
+    },
+    "T10_robustness.csv": {
+      "sha256": "9d5869e5d4eba9abbdbfb48fdb9461ea81f3d4234352d80534a777541d40ce79",
+      "public_availability": "deposited (reference_outputs/)"
+    },
+    "T11_leave_one_out.csv": {
+      "sha256": "9f85633fe7b0d665599c09c578d76f471e2267936212147e621067afa0240095",
+      "public_availability": "deposited (reference_outputs/)"
+    },
+    "T12_stage_breadth.csv": {
+      "sha256": "5a85767f9c9f6fba475b7579471a7e122d4f0e586d3c0a0528a9f84752846324",
+      "public_availability": "deposited (reference_outputs/)"
+    },
+    "T1_sample_composition.csv": {
+      "sha256": "9ddcac6d717865a4a1132b2e9625d603f8b5ff1d183ab9489b832b3410c5efba",
+      "public_availability": "deposited (reference_outputs/)"
+    },
+    "T2_construct_prevalence.csv": {
+      "sha256": "c4a8ffc9c44035160c1b259a86fbc2c504be9f5b23b0333268c9595c42460921",
+      "public_availability": "deposited (reference_outputs/)"
+    },
+    "T3_decomposition.csv": {
+      "sha256": "d1eac09c4f49224d7bbc2f0524fba4e058f6d026d05ff28df9e17bf66bf156f0",
+      "public_availability": "deposited (reference_outputs/)"
+    },
+    "T4_models.csv": {
+      "sha256": "5753e69dff2bf1ae0b040589a7fd613ec26f8ef0e98e1a5eee325ea3bff97b6b",
+      "public_availability": "deposited (reference_outputs/)"
+    },
+    "T5_firth.csv": {
+      "sha256": "09a16cc4df5581aab802eee0c6fad81f2831c2737b9f805380d004b737fd4fbd",
+      "public_availability": "deposited (reference_outputs/)"
+    },
+    "T6_fdr_constructs.csv": {
+      "sha256": "ecd92f3a37946b5a8b20ea8700b63a3ebee2538f639a3f1aa04ec803a06a47e5",
+      "public_availability": "deposited (reference_outputs/)"
+    },
+    "T7_countries.csv": {
+      "sha256": "deb29fb7060036b2a15328ef8878d3440f3c23b26e0c48ce8b2d5abfeeb0f38b",
+      "public_availability": "deposited (reference_outputs/)"
+    },
+    "T8_joint_heterogeneity.csv": {
+      "sha256": "582255f7250fe7816cec886a75e27035222ce018c96f988ede4b2a84ba15f749",
+      "public_availability": "deposited (reference_outputs/)"
+    },
+    "T9_equivalence_tost.csv": {
+      "sha256": "db094d60a0a7d13c11efa3cfbf39a65483f16a64470a55f96d88c009c4438506",
+      "public_availability": "deposited (reference_outputs/)"
+    },
+    "fig1_prevalence_by_stratum.png": {
+      "sha256": "9fc07987bd83f3e9af6e989fd32bd752ed3ed88351439de1bc6b7d7fb6fb572b",
+      "public_availability": "not publicly deposited"
+    },
+    "fig2_correlates_forest.png": {
+      "sha256": "0a98e4846234d7ebc9cdc916aeb4c52c13f13d3bfc6010dbd7d3c9320dd0378c",
+      "public_availability": "not publicly deposited"
+    },
+    "fig3_decomposition.png": {
+      "sha256": "a11c6b6bddf6589f96a237093a4ee498434b08155fa9c1ec3b5a29aaebb38c8f",
+      "public_availability": "not publicly deposited"
+    },
+    "fig4_interaction.png": {
+      "sha256": "61e8e9bc8f8bf6d2601517f6918abb152d3bb70f9976a05b68e8e495e404ffea",
+      "public_availability": "not publicly deposited"
+    },
+    "fig5_country_exploratory.png": {
+      "sha256": "489d9346ab980a86161e2d33669a66ecca9d75ac56960c8c3cd438da762ae63e",
+      "public_availability": "not publicly deposited"
+    },
+    "fig6_measurement_opportunity.png": {
+      "sha256": "21ab7220b400d7ce9c3d1c372d294b165c1e1b6a710026a938668b46eda4cefb",
+      "public_availability": "not publicly deposited"
+    },
+    "provider_level_deidentified.csv": {
+      "sha256": "50c346f2ce2799c84d5342c4b5833a63953a9915828652b47a939f591076cab6",
+      "public_availability": "not publicly deposited"
+    },
+    "reviews_analytical_deidentified.csv": {
+      "sha256": "cef3cd02ed7ef07d680cc54fd61ad7c1ae85a8a97c24d55c6f9b55f664a09023",
+      "public_availability": "not publicly deposited"
+    }
   }
 }
