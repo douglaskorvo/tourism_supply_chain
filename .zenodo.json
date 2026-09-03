@@ -4,7 +4,7 @@
   "upload_type": "software",
   "access_right": "open",
   "license": "MIT",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "language": "eng",
   "creators": [
     {
@@ -32,6 +32,5 @@
       "scheme": "url"
     }
   ],
-  "notes": "Version 1.1.0 adds the audited T0–T12 computational pipeline, complete non-fixed-effect model exports, aggregate reference outputs and automatic reference checks. The Colab link and public-release measurement wording were also corrected. Add the article DOI as a related identifier once the article is published."
+  "notes": "Version 1.1.1 makes the reference manifest explicit about which files are and are not part of the public deposit (only the T0-T12 aggregate tables are distributed; raw input, figures and de-identified datasets are hashed but not deposited), corrects a misleading sentence in the collection notebook's limitations section, and pins jupyter and ipykernel versions in requirements.txt. Add the article DOI as a related identifier once the article is published."
 }
-
