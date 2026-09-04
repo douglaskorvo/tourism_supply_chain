@@ -1,4 +1,4 @@
-cff-version: 1.2.0
+cff-version: 1.3.0
 title: >-
   Tourism service supply chains in ten emerging economies:
   data collection, audited analysis and validation notebooks
@@ -15,7 +15,7 @@ authors:
       University, Petropolis, RJ, Brazil
     orcid: 'https://orcid.org/0000-0001-7473-7425'
 repository-code: 'https://github.com/douglaskorvo/tourism_supply_chain'
-doi: 10.5281/zenodo.22289163
+doi: 10.5281/zenodo.22307190
 abstract: >-
   Versioned notebooks and aggregate reference outputs documenting the
   retrieval and audited analysis of a tourism-review corpus for a study
