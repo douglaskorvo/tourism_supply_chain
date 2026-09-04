@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 title: >-
   Tourism service supply chains in ten emerging economies:
-  data collection and audited analysis notebooks
+  data collection, audited analysis and validation notebooks
 message: >-
   If you use this software or the accompanying materials, please
   cite both the archived release and the associated article.
@@ -15,23 +15,28 @@ authors:
       University, Petropolis, RJ, Brazil
     orcid: 'https://orcid.org/0000-0001-7473-7425'
 repository-code: 'https://github.com/douglaskorvo/tourism_supply_chain'
-doi: 10.5281/zenodo.22286681
+doi: 10.5281/zenodo.22289163
 abstract: >-
   Versioned notebooks and aggregate reference outputs documenting the
   retrieval and audited analysis of a tourism-review corpus for a study
   of reported disruption exposure and customer impact in tourism service
-  supply chains across ten emerging economies. No review-level platform
-  content is redistributed.
+  supply chains across ten emerging economies. This version also deposits the
+  held-out validation procedure: sampling of the double-coded review set, the
+  agreement statistics computed on returned codings, the provider query-stratum
+  face-validity audit, and a provider-grouped gold-labelled split. No review-level
+  platform content, human-coding record or validation metric is redistributed.
 keywords:
   - tourism service supply chain
   - reported disruption
   - customer impact
   - user-generated content
   - dictionary-based content analysis
+  - held-out validation
+  - inter-rater reliability
   - rare-events logistic regression
   - equivalence testing
   - reproducibility
   - emerging economies
 license: MIT
-version: 1.1.1
+version: 1.2.0
 date-released: '2026-09-03'
