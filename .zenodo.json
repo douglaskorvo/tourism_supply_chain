@@ -4,7 +4,7 @@
   "upload_type": "software",
   "access_right": "open",
   "license": "MIT",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "language": "eng",
   "creators": [
     {
@@ -34,5 +34,5 @@
       "scheme": "url"
     }
   ],
-  "notes": "Version 1.2.0 adds the validation/ directory: validation_prep.ipynb (held-out sample and blind workbooks), validation_scoring.ipynb (per-construct agreement, sentiment agreement, query-stratum face-validity audit) and validation_split.ipynb (gold labels by majority vote and a provider-grouped 60/30/10 split). Code only: no human-coding records, audit records or validation metrics are deposited. This version also renames the provider grouping to 'query stratum' throughout the validation materials, since the variable records which retrieval query returned a provider rather than a verified organizational type; column names in the analysis notebook and reference outputs are unchanged for compatibility. Add the article DOI as a related identifier once the article is published."
+  "notes": "Version 1.3.0 narrows the coding instruction for the labour construct, named WorkforceLanguage in the accompanying manuscript. Held-out double coding by two independent coders gave inter-rater agreement of 0.85 on this construct against 0.33 and 0.34 with the dictionary: both coders read bare service-role mentions (guide, driver, receptionist) as workforce references, whereas the dictionary implements the narrower reading of explicit workforce, staffing, training and professionalism discourse, and role mentions are already captured by the chain-stage indicators. The instruction now states the narrow definition. Dictionary patterns, column names and reference outputs are unchanged. Add the article DOI as a related identifier once the article is published."
 }
