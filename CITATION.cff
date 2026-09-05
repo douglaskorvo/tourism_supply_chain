@@ -15,7 +15,9 @@ authors:
       University, Petropolis, RJ, Brazil
     orcid: 'https://orcid.org/0000-0001-7473-7425'
 repository-code: 'https://github.com/douglaskorvo/tourism_supply_chain'
-doi: 10.5281/zenodo.22307190
+# Concept DOI: cite this to point at the latest archived version.
+# The version DOI of each release is registered on the Zenodo record itself.
+doi: 10.5281/zenodo.22003596
 abstract: >-
   Versioned notebooks and aggregate reference outputs documenting the
   retrieval and audited analysis of a tourism-review corpus for a study
